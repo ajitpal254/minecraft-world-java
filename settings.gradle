@@ -1,0 +1,9 @@
+pluginManagement {
+	repositories {
+		maven { url = "https://maven.fabricmc.net/" }
+		maven { url = "https://maven.pkg.github.com/devin-r522/fabric-loom" }
+		gradlePluginPortal()
+	}
+}
+
+rootProject.name = "My App"
