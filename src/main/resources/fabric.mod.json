@@ -1,18 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "${project.groupId}.${project.artifactId}",
-  "version": "${project.version}",
-  "name": "${project.name}",
-  "description": "${project.description}",
+  "id": "my_app",
+  "version": "${version}",
+  "name": "My App",
+  "description": "A Fabric Mod",
   "authors": [
-    "Your Name"
+    "Author"
   ],
   "contact": {
-    "homepage": "https://example.com/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://example.com/"
   },
   "license": "CC0-1.0",
-  "icon": "assets/my-app/icon.png",
+  "icon": "assets/my_app/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -21,8 +20,8 @@
   },
   "mixins": [],
   "depends": {
-    "fabricloader": "~${loader.version}",
-    "fabric-api": "~${fabric.api.version}",
-    "minecraft": "~${minecraft.version}"
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.20.1",
+    "fabric": "*"
   }
 }
