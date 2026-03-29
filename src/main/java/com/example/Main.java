@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.world.ModWorldgen;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,12 @@ public class Main implements ModInitializer {
     public void onInitialize() {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
-        LOGGER.info("Hello from {}! Registered custom elements.", MOD_ID);
+        com.example.entity.ModEntities.registerModEntities();
+        
+        // Register entity attributes
+        net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry.register(com.example.entity.ModEntities.GHOST, com.example.entity.custom.GhostEntity.createGhostAttributes());
+
+        ModWorldgen.register();
+        LOGGER.info("Hello from {}! World generation active.", MOD_ID);
     }
 }

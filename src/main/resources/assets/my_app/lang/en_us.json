@@ -1,4 +1,9 @@
 {
   "item.my_app.custom_item": "Custom Item",
-  "block.my_app.custom_block": "Custom Block"
+  "block.my_app.custom_block": "Custom Block",
+  "entity.my_app.ghost": "Ghost",
+  "entity.my_app.iron_bullet": "Iron Bullet",
+  "item.my_app.musket": "Musket",
+  "item.my_app.iron_bullet": "Iron Bullet",
+  "item.my_app.ghost_spawn_egg": "Ghost Spawn Egg"
 }

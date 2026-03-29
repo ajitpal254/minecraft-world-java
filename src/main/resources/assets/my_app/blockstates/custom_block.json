@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "my_app:block/custom_block"
+    }
+  }
+}

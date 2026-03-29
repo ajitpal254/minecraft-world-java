@@ -16,12 +16,16 @@
   "entrypoints": {
     "main": [
       "com.example.Main"
+    ],
+    "client": [
+      "com.example.ClientMain"
     ]
   },
   "mixins": [],
   "depends": {
     "fabricloader": ">=0.15.0",
     "minecraft": ">=1.20.1",
-    "fabric": "*"
+    "fabric": "*",
+    "java": ">=17"
   }
 }
